@@ -26,8 +26,17 @@
 + (NSString *) fourSquareIconURLwithPrefix:(NSString *)prefix suffix:(NSString *)suffix
 {
     NSString *iconSize = @"44";
+    return [self fourSquareIconURLwithPrefix:prefix suffix:suffix size:iconSize];
+}
+
++ (NSString *) fourSquareIconURLwithPrefix:(NSString *)prefix suffix:(NSString *)suffix size:(NSString *)size
+{
+    if(!prefix || !suffix || !size)
+    {
+        return nil;
+    }
     
-    return [NSString stringWithFormat:@"%@%@%@",prefix,iconSize,suffix];
+    return [NSString stringWithFormat:@"%@%@%@",prefix,size,suffix];
 }
 
 @end

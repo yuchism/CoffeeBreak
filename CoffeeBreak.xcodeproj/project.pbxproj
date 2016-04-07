@@ -18,6 +18,8 @@
 		11234B781CB529B4008C8DCC /* CBVenueVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 11234B771CB529B4008C8DCC /* CBVenueVM.m */; };
 		11234B7B1CB530B5008C8DCC /* CBUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 11234B7A1CB530B5008C8DCC /* CBUtils.m */; };
 		11234B7F1CB53480008C8DCC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11234B7E1CB53480008C8DCC /* Images.xcassets */; };
+		112AF46E1CB5FC0100A5F505 /* CBUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 112AF46D1CB5FC0100A5F505 /* CBUtilsTests.m */; };
+		112AF4701CB6014C00A5F505 /* NSDictionary+ValidationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 112AF46F1CB6014C00A5F505 /* NSDictionary+ValidationTest.m */; };
 		119329B51CB54CE4007F0844 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119329B41CB54CE4007F0844 /* MapKit.framework */; };
 		119329E51CB56437007F0844 /* CBShopDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 119329D61CB56437007F0844 /* CBShopDataController.m */; };
 		119329E61CB56437007F0844 /* CBShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 119329D81CB56437007F0844 /* CBShopViewController.m */; };
@@ -33,7 +35,6 @@
 		11A01B141CB3F8880020C6F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A01B121CB3F8880020C6F4 /* Main.storyboard */; };
 		11A01B161CB3F8880020C6F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11A01B151CB3F8880020C6F4 /* Assets.xcassets */; };
 		11A01B191CB3F8880020C6F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A01B171CB3F8880020C6F4 /* LaunchScreen.storyboard */; };
-		11A01B241CB3F8880020C6F4 /* CoffeeBreakTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A01B231CB3F8880020C6F4 /* CoffeeBreakTests.m */; };
 		11A01B2F1CB3F8880020C6F4 /* CoffeeBreakUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A01B2E1CB3F8880020C6F4 /* CoffeeBreakUITests.m */; };
 		11A01B6B1CB41A6A0020C6F4 /* CBFourSquareService.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A01B6A1CB41A6A0020C6F4 /* CBFourSquareService.m */; };
 		C475C7F163EB21DF5D00CFD7 /* libPods-CoffeeBreak.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 641DD9512F5DF91D590DDA1E /* libPods-CoffeeBreak.a */; };
@@ -78,6 +79,8 @@
 		11234B791CB530B5008C8DCC /* CBUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBUtils.h; sourceTree = "<group>"; };
 		11234B7A1CB530B5008C8DCC /* CBUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBUtils.m; sourceTree = "<group>"; };
 		11234B7E1CB53480008C8DCC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		112AF46D1CB5FC0100A5F505 /* CBUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBUtilsTests.m; sourceTree = "<group>"; };
+		112AF46F1CB6014C00A5F505 /* NSDictionary+ValidationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ValidationTest.m"; sourceTree = "<group>"; };
 		119329B41CB54CE4007F0844 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		119329D51CB56437007F0844 /* CBShopDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBShopDataController.h; sourceTree = "<group>"; };
 		119329D61CB56437007F0844 /* CBShopDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBShopDataController.m; sourceTree = "<group>"; };
@@ -103,7 +106,6 @@
 		11A01B181CB3F8880020C6F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11A01B1A1CB3F8880020C6F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11A01B1F1CB3F8880020C6F4 /* CoffeeBreakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeBreakTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		11A01B231CB3F8880020C6F4 /* CoffeeBreakTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoffeeBreakTests.m; sourceTree = "<group>"; };
 		11A01B251CB3F8880020C6F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11A01B2A1CB3F8880020C6F4 /* CoffeeBreakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeBreakUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A01B2E1CB3F8880020C6F4 /* CoffeeBreakUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoffeeBreakUITests.m; sourceTree = "<group>"; };
@@ -265,7 +267,8 @@
 		11A01B221CB3F8880020C6F4 /* CoffeeBreakTests */ = {
 			isa = PBXGroup;
 			children = (
-				11A01B231CB3F8880020C6F4 /* CoffeeBreakTests.m */,
+				112AF46D1CB5FC0100A5F505 /* CBUtilsTests.m */,
+				112AF46F1CB6014C00A5F505 /* NSDictionary+ValidationTest.m */,
 				11A01B251CB3F8880020C6F4 /* Info.plist */,
 			);
 			path = CoffeeBreakTests;
@@ -559,7 +562,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11A01B241CB3F8880020C6F4 /* CoffeeBreakTests.m in Sources */,
+				112AF46E1CB5FC0100A5F505 /* CBUtilsTests.m in Sources */,
+				112AF4701CB6014C00A5F505 /* NSDictionary+ValidationTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
