@@ -23,7 +23,6 @@
 @property(nonatomic,strong) CBLocationService *locService;
 @property(nonatomic,strong) NSArray *shopList;
 
-
 @end
 
 @implementation CBShopDataController
@@ -37,24 +36,25 @@
     self = [super init];
     if(self)
     {
-        [self initialize];
+        [self _initialize];
     }
     return self;
 }
 
-- (void)initialize
+- (void) _initialize
 {
     self.fsService = [[CBFourSquareService alloc] init];
     self.locService = [[CBLocationService alloc] init];
     
     __weak typeof(self) weakSelf = self;
-    
     self.locService.didUpdateLocation = ^(CLLocation *location)
     {
         [weakSelf.fsService sendRequest:location onSucces:^(NSDictionary *responseDic)
         {
             
             NSArray *venues = [responseDic validObjectForKey:@"venues"];
+            
+            //sorting venues array after loading
             NSSortDescriptor *desc = [[NSSortDescriptor alloc] initWithKey:@"distance" ascending:YES];
             weakSelf.shopList = [venues sortedArrayUsingDescriptors:@[desc]];
             if(weakSelf.onLoadComplete)
@@ -67,8 +67,13 @@
             {
                 weakSelf.onLoadComplete(error);
             }
-            
         }];
+        
+        //passing user current location
+        if(weakSelf.didUpdateUserLocation)
+        {
+            weakSelf.didUpdateUserLocation(location.coordinate);
+        }
     };
 }
 

@@ -7,7 +7,7 @@
 //
 
 #import "CBCategory.h"
-#define ICON_SIZE @"44"
+#import "CBUtils.h"
 
 @implementation CBCategory
 
@@ -19,7 +19,7 @@
     
     if(self.icon_suffix && self.icon_prefix)
     {
-        return [NSString stringWithFormat:@"%@%@%@",self.icon_prefix,ICON_SIZE,self.icon_suffix];
+        return [CBUtils fourSquareIconURLwithPrefix:self.icon_prefix suffix:self.icon_suffix];
     } else
     {
         return  nil;

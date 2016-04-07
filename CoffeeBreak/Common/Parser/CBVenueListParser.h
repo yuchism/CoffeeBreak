@@ -12,6 +12,7 @@
 
 
 @interface CBVenueListParser : NSObject
+
 + (CBLocation *) locationFromDictionary:(NSDictionary *)dic;
 + (CBVenue *) venueFromDictionary:(NSDictionary *)dic;
 + (NSDictionary *) parse:(id)responseObject;

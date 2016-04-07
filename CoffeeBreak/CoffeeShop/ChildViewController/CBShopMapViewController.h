@@ -12,6 +12,4 @@
 
 @interface CBShopMapViewController : UIViewController<CBShopChildViewControllerImpl>
 
-
-@property (nonatomic,weak) CBShopDataController *dataController;
 @end

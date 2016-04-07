@@ -7,6 +7,9 @@
 //
 
 #import "CBLocationService.h"
+
+#define kDistanceFilter 10.0f
+
 @interface CBLocationService()<CLLocationManagerDelegate>
 {
         CLLocationManager *_locationManager;
@@ -23,7 +26,7 @@
         _locationManager = [[CLLocationManager alloc] init];
         _locationManager.delegate = self;
         _locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
-        _locationManager.distanceFilter = 10.0;
+        _locationManager.distanceFilter = kDistanceFilter;
         
         if ([_locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)])
         {

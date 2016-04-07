@@ -17,14 +17,16 @@
 #define CBShopListCellHeight 50.0f
 
 @interface CBShopListViewController ()<UITableViewDelegate,UITableViewDataSource>
+{
 
+}
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
 
 @implementation CBShopListViewController
+@synthesize dataController;
 
 static NSString * const cellReuseIdentifier = @"CBShopListCell";
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];

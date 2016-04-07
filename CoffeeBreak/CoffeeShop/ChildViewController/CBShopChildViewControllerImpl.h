@@ -7,8 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
+
+@class CBShopDataController;
+
+/**
+    Protocol for ChildViewController of CBShopViewController
+*/
 
 @protocol CBShopChildViewControllerImpl <NSObject>
 
 - (void)reloadData;
+
+@optional
+- (void)updateUserLocation:(CLLocationCoordinate2D)loc;
+
+
+@property (nonatomic,weak) CBShopDataController *dataController;
 @end

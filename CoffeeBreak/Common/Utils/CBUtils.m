@@ -19,5 +19,15 @@
     
     return [numberFormatter stringFromNumber: [NSNumber numberWithInteger:num]];
 }
+/*
+ Pieces needed to construct category icons at various sizes.
+ Combine prefix with a size (32, 44, 64, and 88 are available) and suffix
+*/
++ (NSString *) fourSquareIconURLwithPrefix:(NSString *)prefix suffix:(NSString *)suffix
+{
+    NSString *iconSize = @"44";
+    
+    return [NSString stringWithFormat:@"%@%@%@",prefix,iconSize,suffix];
+}
 
 @end

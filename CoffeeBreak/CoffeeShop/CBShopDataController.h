@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
+
 @class CBVenue;
 
 @interface CBShopDataController : NSObject
@@ -15,6 +17,7 @@
 - (NSInteger)numberOfVenues;
 - (CBVenue *)venueAtIndex:(NSInteger)idx;
 
-@property(nonatomic,copy)  void (^onLoadComplete)(NSError *error);
+@property(nonatomic,copy) void(^onLoadComplete)(NSError *error);
+@property(nonatomic,copy) void(^didUpdateUserLocation)(CLLocationCoordinate2D location);
 
 @end

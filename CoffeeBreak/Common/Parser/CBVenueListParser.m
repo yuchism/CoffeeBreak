@@ -16,6 +16,7 @@
 
 @implementation CBVenueListParser
 
+
 + (CBLocation *) locationFromDictionary:(NSDictionary *)dic
 {
     CBLocation *loc = [[CBLocation alloc] init];
@@ -88,9 +89,9 @@
     return category;
 }
 
-
-
-
+/*
+    parsing for responseObject
+*/
 + (NSDictionary *) parse:(id)responseObject
 {
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];

@@ -13,19 +13,23 @@
 
 
 
-
+/**
+ ## FourSquare Setting
+ - clientId, secret, api version.
+ - Setting Category : Coffee Shop
+    https://developer.foursquare.com/categorytree
+    Coffee Shop: 4bf58dd8d48988d1e0931735
+ 
+ - Search_api.
+    testUrl:
+    https://developer.foursquare.com/docs/explore#req=venues/search%3Fll%3D40.7,-74
+*/
 #define CLIENT_ID @"ACAO2JPKM1MXHQJCK45IIFKRFR2ZVL0QASMCBCG5NPJQWF2G"
 #define CLIENT_SECRET @"YZCKUYJ1WHUV2QICBXUBEILZI1DMPUIDP5SHV043O04FKBHL"
 #define FSAPI_VER @"20160406"
-
-/**
- Setting Category : Coffee Shop
- https://developer.foursquare.com/categorytree
- Coffee Shop:
- 4bf58dd8d48988d1e0931735
-*/
 #define CATEGORY_ID @"4bf58dd8d48988d1e0931735"
 
+#define API_SEARCH_VENUES @"https://api.foursquare.com/v2/venues/search"
 
 
 @interface CBFourSquareService()
@@ -60,7 +64,6 @@
     }
     
     NSMutableDictionary *param = [NSMutableDictionary dictionary];
-    
     NSString *ll = [NSString stringWithFormat:@"%f,%f",location.coordinate.latitude,location.coordinate.longitude];
     [param setObject:CLIENT_ID forKey:@"client_id"];
     [param setObject:CLIENT_SECRET forKey:@"client_secret"];
@@ -69,7 +72,7 @@
     [param setObject:ll forKey:@"ll"];
     
     self.task = [[AFHTTPSessionManager manager]
-            GET:@"https://api.foursquare.com/v2/venues/search"
+            GET:API_SEARCH_VENUES
             parameters:param
             progress:nil
             success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject)

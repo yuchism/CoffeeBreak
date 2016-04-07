@@ -10,5 +10,6 @@
 
 @interface CBUtils : NSObject
 + (NSString *) addThousandSeperator:(NSInteger)num;
++ (NSString *) fourSquareIconURLwithPrefix:(NSString *)prefix suffix:(NSString *)suffix;
 
 @end

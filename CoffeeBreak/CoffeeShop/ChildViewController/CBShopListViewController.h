@@ -13,5 +13,4 @@
 @interface CBShopListViewController : UIViewController <CBShopChildViewControllerImpl>
 
 
-@property (nonatomic,weak) CBShopDataController *dataController;
 @end
