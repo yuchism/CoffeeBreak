@@ -2,9 +2,11 @@
 A Simple iOS application for finding coffeeshops nearby user location using GPS & FourSquare API.
 
 ## Development Environment.
-* XCode 7.3
-* Development Target : iOS 9.3
-* OS X El Capitan 10.11.4
+```fish
+XCode 7.3
+Development Target : iOS 9.3
+OS X El Capitan 10.11.4
+```
 
 ## Getting Started
 
