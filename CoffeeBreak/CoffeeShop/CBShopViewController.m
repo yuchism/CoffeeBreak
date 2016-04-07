@@ -35,7 +35,9 @@ typedef enum
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.title = @"Coffee Break";
+    
+    
     self.dataController = [[CBShopDataController alloc] init];
     
     /*

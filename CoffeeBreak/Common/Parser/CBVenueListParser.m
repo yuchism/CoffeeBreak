@@ -59,6 +59,7 @@
     
     
     venue.name = [dic validObjectForKey:@"name"];
+    venue.venueId = [dic validObjectForKey:@"id"];
     
     return venue;
 }

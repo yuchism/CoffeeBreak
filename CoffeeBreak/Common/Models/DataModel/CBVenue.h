@@ -16,7 +16,7 @@
 @interface CBVenue : NSObject
 
 
-
+@property(nonatomic,strong) NSString *venueId;
 @property(nonatomic,strong) NSString *name;
 @property(nonatomic,strong) CBLocation *location;
 @property(nonatomic,strong) CBCategory *category;

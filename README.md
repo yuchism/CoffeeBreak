@@ -14,24 +14,24 @@ OS X El Capitan 10.11.4
 
 All dependencies are managed by CocoaPods. Install CocoaPods first if necessary.
 ```fish
-$sudo gem install cocoapods.
+$ sudo gem install cocoapods
 ```
 ### Configuration
 
 1) Download the repository
 ```fish
-$git clone https://github.com/yuchism/CoffeeBreak.git
-$cd CoffeeBreak/
+$ git clone https://github.com/yuchism/CoffeeBreak.git
+$ cd CoffeeBreak/
 ```
 
 2) Install pods
 ```fish
-$pod install
+$ pod install
 ```
 
 3) Open the workspace
 ```fish
-$open CoffeeBreak.xcworkspace
+$ open CoffeeBreak.xcworkspace
 ```
 4) Build and run/test application in iPhone simulator
 * For run application in simulator: Under Xcode, press Command + R
