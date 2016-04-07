@@ -1,5 +1,7 @@
 #CoffeeBreak
 A Simple iOS application for finding coffeeshops nearby user location using GPS & FourSquare API.
+<img src="https://raw.githubusercontent.com/yuchism/CoffeeBreak/master/screenshot/coffeeshop_list.png" width="320">
+<img src="https://raw.githubusercontent.com/yuchism/CoffeeBreak/master/screenshot/coffeeshop_pin.png" width="320">
 
 ## Development Environment.
 ```fish
