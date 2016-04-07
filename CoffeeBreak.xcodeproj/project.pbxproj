@@ -41,6 +41,7 @@
 		11CAF3B71CB65E4F00EA8539 /* coffeeshop_pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CAF3B31CB65E4F00EA8539 /* coffeeshop_pin.png */; };
 		11CAF3B81CB65E4F00EA8539 /* launch_shot.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CAF3B41CB65E4F00EA8539 /* launch_shot.png */; };
 		11CAF3B91CB65E4F00EA8539 /* pathfind.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CAF3B51CB65E4F00EA8539 /* pathfind.png */; };
+		11CAF3BB1CB6629000EA8539 /* actionsheet.png in Resources */ = {isa = PBXBuildFile; fileRef = 11CAF3BA1CB6629000EA8539 /* actionsheet.png */; };
 		C475C7F163EB21DF5D00CFD7 /* libPods-CoffeeBreak.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 641DD9512F5DF91D590DDA1E /* libPods-CoffeeBreak.a */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +122,7 @@
 		11CAF3B31CB65E4F00EA8539 /* coffeeshop_pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coffeeshop_pin.png; sourceTree = "<group>"; };
 		11CAF3B41CB65E4F00EA8539 /* launch_shot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_shot.png; sourceTree = "<group>"; };
 		11CAF3B51CB65E4F00EA8539 /* pathfind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pathfind.png; sourceTree = "<group>"; };
+		11CAF3BA1CB6629000EA8539 /* actionsheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = actionsheet.png; sourceTree = "<group>"; };
 		244331DC484B4556DE4FD596 /* Pods-CoffeeBreak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeBreak.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoffeeBreak/Pods-CoffeeBreak.release.xcconfig"; sourceTree = "<group>"; };
 		641DD9512F5DF91D590DDA1E /* libPods-CoffeeBreak.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoffeeBreak.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7C56BB75359D2FFA4FEA83D /* Pods-CoffeeBreak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeBreak.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoffeeBreak/Pods-CoffeeBreak.debug.xcconfig"; sourceTree = "<group>"; };
@@ -347,6 +349,7 @@
 		11CAF3B11CB65E4F00EA8539 /* screenshot */ = {
 			isa = PBXGroup;
 			children = (
+				11CAF3BA1CB6629000EA8539 /* actionsheet.png */,
 				11CAF3B21CB65E4F00EA8539 /* coffeeshop_list.png */,
 				11CAF3B31CB65E4F00EA8539 /* coffeeshop_pin.png */,
 				11CAF3B41CB65E4F00EA8539 /* launch_shot.png */,
@@ -492,6 +495,7 @@
 				11CAF3B61CB65E4F00EA8539 /* coffeeshop_list.png in Resources */,
 				11A01B161CB3F8880020C6F4 /* Assets.xcassets in Resources */,
 				11A01B141CB3F8880020C6F4 /* Main.storyboard in Resources */,
+				11CAF3BB1CB6629000EA8539 /* actionsheet.png in Resources */,
 				11CAF3B71CB65E4F00EA8539 /* coffeeshop_pin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
